@@ -93,10 +93,6 @@ const ActionSheet: FC<propTypes> = ({
     );
   });
 
-  /**
-   * elements: titleBox, messageBox, buttonBox, cancelButtonBox
-   * box size: height, marginTop, marginBottom
-   */
   const calculateHeight = useMemo(() => {
     const getHeight = (name: string) => {
       const styleOf = propsStyles[name as keyof typeof propsStyles];
